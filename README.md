@@ -26,7 +26,7 @@
     <p>insert the following configuration into <code>appSettings.json</code> file:</p>
     <pre><code>{
     "HTTPLogConnection": {
-        "DatabaseProvider": "", // SQL or PostgreSQL, and the default is SQL
+        "DatabaseProvider": "", // SQL or PostgreSQL, the default is SQL
         "DefaultConnection": ""
     }
 }</code></pre>
