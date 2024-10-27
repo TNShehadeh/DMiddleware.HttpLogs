@@ -23,7 +23,7 @@
 
 <h2>Usage</h2>
  <h3>appSettings.json</h3>
-    <p>Developers should add the following configuration to their <code>appSettings.json</code> file:</p>
+    <p>insert the following configuration into <code>appSettings.json</code> file:</p>
     <pre><code>{
     "HTTPLogConnection": {
         "DatabaseProvider": "", // SQL or PostgreSQL, and the default is SQL
