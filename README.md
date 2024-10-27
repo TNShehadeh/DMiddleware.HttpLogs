@@ -22,7 +22,17 @@
 </ul>
 
 <h2>Usage</h2>
-<p>To use this middleware, configure it in your ASP.NET Core application’s startup:</p>
+ <h3>appSettings.json</h3>
+    <p>Developers should add the following configuration to their <code>appSettings.json</code> file:</p>
+    <pre><code>{
+    "HTTPLogConnection": {
+        "DatabaseProvider": "", // SQL or PostgreSQL, and the default is SQL
+        "DefaultConnection": ""
+    }
+}</code></pre>
+
+
+<p>To use this middleware, configure it in your ASP.NET Core application’s startup/program.cs:</p>
 
 <pre><code>services.ConfigureDMiddlewareServices(options =&gt; new PackageConfigurationOptions()
 {
