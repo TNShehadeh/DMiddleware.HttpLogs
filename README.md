@@ -34,12 +34,13 @@
 
 <p>To use this middleware, configure it in your ASP.NET Core application’s startup/program.cs:</p>
 
-<pre><code>services.ConfigureDMiddlewareServices(options =&gt; new PackageConfigurationOptions()
+<pre><code>services.ConfigureDMiddlewareServices(options =&gt;
 {
-    SaveRequestBody = true,
-    SaveRequesterInfo = true,
-    SaveRequestHeader = true,
-    SaveResponse = true
+    options.SaveRequestBody = true;
+   options.SaveRequesterInfo = true;
+   options.SaveRequestHeader = true;
+   options.SaveResponse = true;
+   options.LogTheLoggDashboard = false;
 });</code></pre>
 
 <p>Then add the middleware to the request pipeline:</p>
