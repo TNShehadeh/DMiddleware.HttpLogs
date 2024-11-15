@@ -47,7 +47,17 @@
 
 <pre><code>app.UseRequestLogging();</code></pre>
 
+<h4>Accessing the Logs Dashboard</h4>
+
+<p> To access the logs dashboard, you can map the dashboard route by adding the following to your Configure method in Startup.cs or Program.cs:</p>
+
+<pre><code>app.MapDLoggerDashboard();</code></pre>
+<p>Once the dashboard is configured, you can access it via the following URL:</p>
+<pre><code>yourURL/DLogger/index.html</code></pre>
+
 <p>This middleware helps developers monitor application behavior and diagnose issues effectively, making it an essential tool for robust application logging.</p>
+
+
 
 </body>
 </html>
