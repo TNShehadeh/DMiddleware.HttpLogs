@@ -43,10 +43,10 @@
    options.LogTheLoggDashboard = false;
    options.UseUserInfo = true;
    options.UserIdResolver = provider => provider.GetRequiredService<IUserContextService>().GetUserId();
-
-    //Func<IServiceProvider, string> UserIdResolver so you know how to handle it
 });</code></pre>
-
+<p>note : the UserIdResolver is: Func< IServiceProvider, string ></p>
+<p>you can handle it as you wish</p>
+</br>
 <p>Then add the middleware to the request pipeline:</p>
 
 <pre><code>app.UseRequestLogging();</code></pre>
