@@ -41,6 +41,10 @@
    options.SaveRequestHeader = true;
    options.SaveResponse = true;
    options.LogTheLoggDashboard = false;
+   options.UseUserInfo = true;
+   options.UserIdResolver = provider => provider.GetRequiredService<IUserContextService>().GetUserId();
+
+    //Func<IServiceProvider, string> UserIdResolver so you know how to handle it
 });</code></pre>
 
 <p>Then add the middleware to the request pipeline:</p>
